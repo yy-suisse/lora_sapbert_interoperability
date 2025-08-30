@@ -1,0 +1,9 @@
+numpy==1.23.5
+peft==0.15.2
+polars==1.32.3
+PyYAML==6.0
+PyYAML==6.0.2
+torch==2.1.1+cu121
+tqdm==4.65.0
+transformers==4.47.0
+transformers==4.36.0

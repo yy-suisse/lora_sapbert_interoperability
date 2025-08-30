@@ -1,0 +1,20 @@
+SAPBERT_PARAMETERS:
+  sapbert_path : "cambridgeltl/SapBERT-from-PubMedBERT-fulltext"
+  lora_rank: 8
+  lora_alpha : 16
+  target_modules : ["query", "key", "value"]
+  max_length: 96
+  lora_dropout : 0.1
+
+CONCEPT_DATA:
+  mapped_concepts: "data/mapped_concepts.parquet"
+
+EMBEDDINGS_SAVE_PATH:
+  ft_model: "checkpoints/sapbert_lora_epoch_003.pt"
+  graph_hug_concepts : "embeddings/concept_info.parquet"
+  all_ulms : "embeddings/concept_info_ulms.parquet"
+
+  snomed_embedding : "embeddings/ft_snomed_emb.pt"
+  ulms_embedding: "embeddings/umls.npy"
+
+
